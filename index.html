@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AV United Esports — Indian Free Fire esports team. Follow our journey, roster updates, and tournament results.">
+  <meta name="keywords" content="AV United, AV United Esports, Free Fire esports India, gaming team">
+  <meta name="theme-color" content="#050505">
+  <title>AV UNITED ESPORTS | Official</title>
+  <style>
+    :root { --bg:#050505; --panel:#101010; --white:#f5f5f5; --muted:#a6a6a6; --line:#292929; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--white); font-family:Arial, Helvetica, sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    .nav { position:sticky; top:0; z-index:5; display:flex; align-items:center; justify-content:space-between; gap:18px; padding:16px 7%; background:rgba(5,5,5,.92); border-bottom:1px solid var(--line); backdrop-filter:blur(12px); }
+    .brand { font-weight:900; letter-spacing:2px; font-size:15px; }
+    .brand span { color:#aaa; }
+    .nav-links { display:flex; gap:22px; font-size:12px; letter-spacing:1.4px; color:#c7c7c7; }
+    .nav-links a:hover { color:#fff; }
+    .hero { min-height:84vh; display:grid; place-items:center; text-align:center; padding:55px 20px 70px; position:relative; overflow:hidden; }
+    .hero:before { content:""; position:absolute; inset:0; background:radial-gradient(ellipse at 50% 35%, #303030 0%, #111 33%, #050505 68%); opacity:.8; }
+    .hero-inner { position:relative; max-width:900px; }
+    .logo { width:min(74vw,390px); max-height:330px; object-fit:contain; filter:drop-shadow(0 0 28px rgba(255,255,255,.13)); }
+    .eyebrow { margin:24px 0 10px; color:#bcbcbc; font-size:11px; letter-spacing:5px; text-transform:uppercase; }
+    h1 { margin:0; font-size:clamp(34px,7vw,72px); letter-spacing:clamp(3px,1vw,10px); font-weight:900; }
+    .subtitle { margin:17px auto 28px; color:#bdbdbd; font-size:14px; line-height:1.8; max-width:560px; }
+    .buttons { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; }
+    .btn { border:1px solid #eee; padding:13px 20px; font-size:11px; letter-spacing:2px; font-weight:800; text-transform:uppercase; transition:.2s; }
+    .btn.primary { background:#f5f5f5; color:#050505; }
+    .btn:hover { transform:translateY(-2px); background:#bdbdbd; color:#050505; border-color:#bdbdbd; }
+    .section { padding:78px 7%; max-width:1200px; margin:auto; }
+    .section-label { color:#999; font-size:11px; letter-spacing:4px; text-transform:uppercase; }
+    h2 { font-size:clamp(26px,4vw,42px); letter-spacing:2px; margin:12px 0 18px; }
+    .about-grid { display:grid; grid-template-columns:1.2fr .8fr; gap:28px; align-items:stretch; }
+    .card { background:linear-gradient(145deg,#141414,#090909); border:1px solid var(--line); padding:28px; }
+    .card p { color:#b5b5b5; line-height:1.8; font-size:14px; }
+    .stats { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .stat { border:1px solid var(--line); padding:22px 16px; background:#0c0c0c; }
+    .stat strong { display:block; font-size:22px; margin-bottom:8px; }
+    .stat span { color:#999; font-size:10px; letter-spacing:2px; text-transform:uppercase; }
+    .placeholder-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:25px; }
+    .placeholder { min-height:145px; display:grid; place-items:center; text-align:center; padding:20px; background:#0c0c0c; border:1px solid var(--line); }
+    .placeholder b { display:block; font-size:13px; letter-spacing:2px; margin-bottom:9px; }
+    .placeholder span { color:#888; font-size:12px; line-height:1.6; }
+    .cta { text-align:center; border:1px solid var(--line); background:linear-gradient(135deg,#171717,#080808); padding:40px 20px; }
+    .cta p { color:#aaa; line-height:1.7; }
+    footer { padding:25px 7%; border-top:1px solid var(--line); color:#777; font-size:11px; display:flex; justify-content:space-between; gap:15px; flex-wrap:wrap; letter-spacing:1px; }
+    @media(max-width:700px) {
+      .nav { padding:15px 5%; }
+      .nav-links { gap:12px; font-size:10px; }
+      .brand { font-size:12px; }
+      .about-grid { grid-template-columns:1fr; }
+      .placeholder-grid { grid-template-columns:1fr; }
+      .section { padding:58px 5%; }
+      .hero { min-height:78vh; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="#home">AV <span>UNITED</span></a>
+    <div class="nav-links">
+      <a href="#about">ABOUT</a>
+      <a href="#team">TEAM</a>
+      <a href="#updates">UPDATES</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <img class="logo" src="av-united-logo.png" alt="AV United Esports logo">
+        <div class="eyebrow">India • Esports Organisation</div>
+        <h1>AV UNITED</h1>
+        <p class="subtitle">Built on unity. Driven by competition.<br>Welcome to the official home of AV United Esports.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#about">Explore Team</a>
+          <a class="btn" href="#updates">Latest Updates</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-label">Who we are</div>
+      <h2>ONE TEAM. ONE UNITED FORCE.</h2>
+      <div class="about-grid">
+        <div class="card">
+          <p><strong>AV UNITED ESPORTS</strong> is an Indian esports team building its identity in competitive gaming. This official page is the starting point for our team story, player announcements, tournament participation, and future achievements.</p>
+          <p>Follow our journey as we grow. Roster details and verified results will be added here as they become available.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>IND 🇮🇳</strong><span>Based in India</span></div>
+          <div class="stat"><strong>FREE FIRE</strong><span>Game Focus</span></div>
+          <div class="stat"><strong>UNITED</strong><span>Team Identity</span></div>
+          <div class="stat"><strong>COMING SOON</strong><span>Roster Updates</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="section-label">The lineup</div>
+      <h2>TEAM ROSTER</h2>
+      <p style="color:#999;line-height:1.8;max-width:650px">Player profiles will be added here later. This layout is ready to edit when you have the names, roles, and player images.</p>
+      <div class="placeholder-grid">
+        <div class="placeholder"><div><b>PLAYER 01</b><span>Name and role<br>Coming soon</span></div></div>
+        <div class="placeholder"><div><b>PLAYER 02</b><span>Name and role<br>Coming soon</span></div></div>
+        <div class="placeholder"><div><b>PLAYER 03</b><span>Name and role<br>Coming soon</span></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="updates">
+      <div class="cta">
+        <div class="section-label">Stay connected</div>
+        <h2>THE JOURNEY STARTS HERE.</h2>
+        <p>Official social links and tournament updates will be added soon.</p>
+        <a class="btn" href="mailto:avunited@example.com">Contact Team</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> AV UNITED ESPORTS</span>
+    <span>UNITY • DISCIPLINE • COMPETITION</span>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
